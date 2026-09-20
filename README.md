@@ -6,6 +6,8 @@ An internal enterprise analytics and automation system for Finance and Tax teams
 
 This project was built almost entirely autonomously by [Hermes](https://github.com/nousresearch/hermes) - an AI Agent / Jarvis running on a home lab server. It utilizes free community/grant API tokens ("token bansos"). Human involvement in actual code development was minimal, as the creator only monitored the agent's progress.
 
+**Collaboration Note**: This repository demonstrates AI-human collaboration where Hermes handles the heavy lifting of development while humans provide oversight and strategic direction.
+
 ## Architecture Overview
 
 ```

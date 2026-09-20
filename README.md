@@ -171,7 +171,7 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
 # Set environment
-export DATABASE_URL=postgresql://postgres:postgres@localhost:5432/tax_finance
+export DATABASE_URL=postgresql://postgres:postgres@localhost:5433/tax_finance
 
 # Run migrations
 alembic upgrade head

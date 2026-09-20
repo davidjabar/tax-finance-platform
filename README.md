@@ -175,10 +175,10 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
 # Set environment
-export POSTGRES_USER=postgres
-export POSTGRES_PASSWORD=postgres
+export POSTGRES_USER=your_user
+export POSTGRES_PASSWORD=your_password
 export POSTGRES_DB=tax_finance
-export DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5433/${POSTGRES_DB}
+export DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db-service:5433/${POSTGRES_DB}
 
 # Run migrations
 alembic upgrade head

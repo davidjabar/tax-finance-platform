@@ -146,6 +146,10 @@ Transaction (1) ──── (N) Exception
 ```bash
 # Clone and start
 cd tax-finance-platform
+# Copy .env.example to .env and modify as needed
+cp .env.example .env
+# Edit .env to set your actual credentials
+# Then start services
 docker compose up --build
 
 # Services:
@@ -171,7 +175,10 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 
 # Set environment
-export DATABASE_URL=postgresql://postgres:postgres@localhost:5433/tax_finance
+export POSTGRES_USER=postgres
+export POSTGRES_PASSWORD=postgres
+export POSTGRES_DB=tax_finance
+export DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5433/${POSTGRES_DB}
 
 # Run migrations
 alembic upgrade head
